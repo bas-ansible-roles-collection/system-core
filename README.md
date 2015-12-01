@@ -1,6 +1,7 @@
 # System Core (`system-core`)
 
 Master:
+[![Build Status](https://semaphoreci.com/api/v1/projects/e6233c01-ce39-4d4e-b839-d81761e51f70/619287/badge.svg)](https://semaphoreci.com/antarctica/ansible-system-core)
 
 Develop:
 [![Build Status](https://semaphoreci.com/api/v1/projects/e6233c01-ce39-4d4e-b839-d81761e51f70/619279/badge.svg)](https://semaphoreci.com/antarctica/ansible-system-core)
