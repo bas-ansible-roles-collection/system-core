@@ -1,0 +1,9 @@
+---
+# These variables override those defined by roles
+
+# Generic
+project_hostname_project: "barc-system-core"
+project_repository: "git@github.com:antarctica/ansible-system-core.git"
+
+# BARC roles
+barc_role_name: system-core
