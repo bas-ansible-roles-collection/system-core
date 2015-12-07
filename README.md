@@ -104,7 +104,7 @@ For example, a playbook such:
 ```yaml
 ---
 
-- name: setup web-server
+- name: setup web-servers
   hosts: all
   become: yes
   vars: []
@@ -123,7 +123,7 @@ Might become:
     - BARC.LEPP
 ```
 
-Note: The roles above are necessarily real BARC roles.
+Note: The roles above are not necessarily real BARC roles.
 
 ### Typical playbook
 
@@ -143,7 +143,7 @@ Note: The roles above are necessarily real BARC roles.
 BARC roles use standardised tags to control which aspects of an environment are changed by roles. Where relevant, tags
 will be applied at a role, or task(s) level, as indicated below.
 
-This role uses the following tags, for all tasks:
+This role uses the following tags:
 
 * None
 
