@@ -63,6 +63,34 @@ Note: Using this role without its dependencies is **NOT** supported, and may lea
 
 ## Usage
 
+### Avoid listing this role as a dependency in other roles
+
+This role is concerned with configuring a machine to a base state. In some cases this is not desirable such as when 
+running within a CI or other managed environment.
+
+For this reason this role **SHOULD NOT** be listed as a direct dependency of other roles. Instead this role should be
+listed *alongside* other roles in a playbook. This ensures users can *opt-in* to this role where desired, rather than
+forcing users to *opt-out* which is more complex.
+
+### When to use this role
+
+This role **SHOULD** be used on machines provisioned by BAS, except where advised not to be BAS ICT. This is to ensure
+all machines follow minimum conventions for networking and security. Other users may use this role as they see fit.
+
+Due to the nature of this role it is recommended to apply this role first within playbooks.
+
+E.g.
+
+```yaml
+- name: setup web-servers
+  hosts: all
+  become: yes
+  vars: []
+  roles:
+    - BARC.system-core
+    - BARC.nginx
+```
+
 ### What are meta-roles?
 
 Meta-roles are a concept with the BARC for roles which group other roles together through role dependencies.
