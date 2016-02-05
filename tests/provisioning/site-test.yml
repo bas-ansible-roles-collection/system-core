@@ -12,4 +12,5 @@
   roles:
     - bas-ansible-roles-collection.system-hostname
     - ../../../system-core
-  tasks: []
+  tasks:
+    - include: ../tasks/main.yml
