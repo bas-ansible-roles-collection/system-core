@@ -13,9 +13,6 @@
 # Unlike projects, role dependencies are not pinned to ensure roles always work with the latest role versions.
 
 - src: bas-ansible-roles-collection.system-users
-- src: bas-ansible-roles-collection.system-hostname
-- src: bas-ansible-roles-collection.system-security
-
 
 #- src: bas-ansible-roles-collection.system-hostname
 
