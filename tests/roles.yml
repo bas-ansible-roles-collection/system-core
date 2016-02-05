@@ -12,9 +12,6 @@
 
 # Unlike projects, role dependencies are not pinned to ensure roles always work with the latest role versions.
 
-  version: v0.2.0
-  version: v0.1.1
-  version: v0.1.0
 - src: bas-ansible-roles-collection.system-users
 - src: bas-ansible-roles-collection.system-hostname
 - src: bas-ansible-roles-collection.system-security

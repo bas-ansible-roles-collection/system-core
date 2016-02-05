@@ -14,6 +14,7 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 * Added missing 'BARC_INSTALL' tag
 * Added missing instructions for setting up CI for the master branch
+* Testing role dependencies should always use latest versions
 
 ## 0.1.0 - 01/12/2015
 
