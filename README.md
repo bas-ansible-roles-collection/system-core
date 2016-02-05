@@ -1,10 +1,10 @@
 # System Core (`system-core`)
 
 Master:
-[![Build Status](https://semaphoreci.com/api/v1/projects/e6233c01-ce39-4d4e-b839-d81761e51f70/619287/badge.svg)](https://semaphoreci.com/antarctica/ansible-system-core)
+[![Build Status](https://semaphoreci.com/api/v1/bas-ansible-roles-collection/system-core/branches/master/badge.svg)](https://semaphoreci.com/bas-ansible-roles-collection/system-core)
 
 Develop:
-[![Build Status](https://semaphoreci.com/api/v1/projects/e6233c01-ce39-4d4e-b839-d81761e51f70/619279/badge.svg)](https://semaphoreci.com/antarctica/ansible-system-core)
+[![Build Status](https://semaphoreci.com/api/v1/bas-ansible-roles-collection/system-core/branches/develop/badge.svg)](https://semaphoreci.com/bas-ansible-roles-collection/system-core)
 
 Meta role for including roles related to system setup and security
 
@@ -21,9 +21,12 @@ See `tests/README.md` for more information.
 
 ## Dependencies
 
-* [**BARC.system-users**](https://galaxy.ansible.com/detail#/role/5960) - minimum version: *0.2.0*
-* [**BARC.system-hostname**](https://galaxy.ansible.com/detail#/role/6042) - minimum version: *0.1.1*
-* [**BARC.system-security**](https://galaxy.ansible.com/detail#/role/6285) - minimum version: *0.1.0*
+* [**bas-ansible-roles-collection.system-users**](https://galaxy.ansible.com/bas-ansible-roles-collection/system-ssh/)
+  * Minimum version: *0.2.0*
+* [**bas-ansible-roles-collection.system-hostname**](https://galaxy.ansible.com/bas-ansible-roles-collection/system-ssh/)
+  * Minimum version: *0.1.1*
+* [**bas-ansible-roles-collection.system-security**](https://galaxy.ansible.com/bas-ansible-roles-collection/system-ssh/)
+  * Minimum version: *0.1.0*
 
 ### Pinning dependencies
 
@@ -101,8 +104,8 @@ E.g.
   become: yes
   vars: []
   roles:
-    - BARC.system-core
-    - BARC.nginx
+    - bas-ansible-roles-collection.system-core
+    - bas-ansible-roles-collection.nginx
 ```
 
 ### What are meta-roles?
@@ -123,18 +126,18 @@ For example, a playbook such:
   become: yes
   vars: []
   roles:
-    - BARC.nginx
-    - BARC.php
-    - BARC.php-fpm
-    - BARC.php-pgsql
-    - BARC.postgresql
+    - bas-ansible-roles-collection.nginx
+    - bas-ansible-roles-collection.php
+    - bas-ansible-roles-collection.php-fpm
+    - bas-ansible-roles-collection.php-pgsql
+    - bas-ansible-roles-collection.postgresql
 ```
 
 Might become:
 
 ```yaml
   roles:
-    - BARC.LEPP
+    - bas-ansible-roles-collection.LEPP
 ```
 
 Note: The roles above are not necessarily real BARC roles.
@@ -149,7 +152,7 @@ Note: The roles above are not necessarily real BARC roles.
   become: yes
   vars: []
   roles:
-    - BARC.system-core
+    - bas-ansible-roles-collection.system-core
 ```
 
 ### Tags
@@ -182,7 +185,7 @@ This role uses the following tags:
 ### Issue tracking
 
 Issues, bugs, improvements, questions, suggestions and other tasks related to this package are managed through the 
-[BAS Ansible Role Collection](https://jira.ceh.ac.uk/projects/BARC) (BARC) project on Jira.
+[BAS Ansible Roles Collection](https://jira.ceh.ac.uk/projects/BARC) (BARC) project on Jira.
 
 This service is currently only available to BAS or NERC staff, although external collaborators can be added on request.
 See our contributing policy for more information.
@@ -196,7 +199,7 @@ All changes should be committed, via pull request, to the canonical repository, 
 A mirror of this repository is maintained on GitHub. Changes are automatically pushed from the canonical repository to
 this mirror, in a one-way process.
 
-`git@github.com:antarctica/ansible-system-core.git`
+`git@github.com:bas-ansible-roles-collection/system-core.git`
 
 Note: The canonical repository is only accessible within the NERC firewall. External collaborators, please make pull 
 requests against the mirrored GitHub repository and these will be merged as appropriate.
