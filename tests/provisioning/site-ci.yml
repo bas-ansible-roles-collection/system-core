@@ -10,4 +10,7 @@
   become: yes
   vars: []
   roles:
+    - bas-ansible-roles-collection.system-hostname
     - ~/system-core
+  tasks:
+    - include: ../tasks/main.yml

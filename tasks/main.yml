@@ -1,0 +1,6 @@
+---
+# tasks file for system-security (meta-role)
+
+- include: register-role.yml
+  tags:
+    - BARC_ROLE_REGISTRATION

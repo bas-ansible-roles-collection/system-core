@@ -16,10 +16,10 @@ galaxy_info:
     versions:
       - trusty
 
-  categories:
+  galaxy_tags:
   - system
 
 dependencies:
-  - { role: 'BARC.system-users',    tags: BARC_ROLE_DEPENDENCY }
-  - { role: 'BARC.system-hostname', tags: BARC_ROLE_DEPENDENCY }
-  - { role: 'BARC.system-security', tags: BARC_ROLE_DEPENDENCY }
+  - { role: 'bas-ansible-roles-collection.system-users',    tags: BARC_ROLE_DEPENDENCY }
+  - { role: 'bas-ansible-roles-collection.system-hostname', tags: BARC_ROLE_DEPENDENCY }
+  - { role: 'bas-ansible-roles-collection.system-security', tags: BARC_ROLE_DEPENDENCY }
