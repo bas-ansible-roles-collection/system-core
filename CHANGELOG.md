@@ -18,6 +18,7 @@ Note: Developers - make sure to set the `BARC_role_version` variable when releas
 * Added missing 'BARC_INSTALL' tag
 * Added missing instructions for setting up CI for the master branch
 * Testing role dependencies should always use latest versions
+* Wording for why we need to pull in dependencies of this role when testing
 * Pinning Ansible to pre-2.0 version in CI
 
 ### Changed
