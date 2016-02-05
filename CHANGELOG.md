@@ -8,6 +8,7 @@ This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ### Added
 
 * Guidance notes for using role
+* Missing 'hostname' role for use when testing
 
 ### Fixed
 
