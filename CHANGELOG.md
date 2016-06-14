@@ -10,6 +10,7 @@ Remember: Make sure to update system_core_barc_role_version variable when a new 
 ### Added
 
 * Improved local fact checking for BARC manifest
+* Added dependency on system-groups role to ensure secondary groups needed by system-users role will exist
 
 ### Fixed
 

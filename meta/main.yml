@@ -23,3 +23,4 @@ dependencies:
   - { role: 'bas-ansible-roles-collection.system-users',    tags: BARC_ROLE_DEPENDENCY }
   - { role: 'bas-ansible-roles-collection.system-hostname', tags: BARC_ROLE_DEPENDENCY }
   - { role: 'bas-ansible-roles-collection.system-security', tags: BARC_ROLE_DEPENDENCY }
+  - { role: bas-ansible-roles-collection.system-groups,   tags: BARC_ROLE_DEPENDENCY }
