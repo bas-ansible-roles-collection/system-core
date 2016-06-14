@@ -22,5 +22,10 @@
 # Note: BARC roles **MUST NOT** pin roles, except in exceptional circumstances.
 # Source: https://antarctica.hackpad.com/BARC-Overview-and-Policies-SzcHzHvitkt#:h=Version-pinning-policy
 
+# This role is the 'system-core' role and so cannot include itself
+
 # Top level roles
-- src: bas-ansible-roles-collection.system-core
+- src: bas-ansible-roles-collection.system-groups
+- src: bas-ansible-roles-collection.system-users
+- src: bas-ansible-roles-collection.system-hostname
+- src: bas-ansible-roles-collection.system-security
