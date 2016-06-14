@@ -7,6 +7,8 @@ Remember: Make sure to update system_core_barc_role_version variable when a new 
 
 ## [Unreleased][unreleased]
 
+## 0.3.0 - 14/06/2016
+
 ### Added
 
 * Improved local fact checking for BARC manifest
