@@ -3,9 +3,26 @@
 All notable changes to this role will be documented in this file.
 This role adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-Note: Developers - make sure to set the `BARC_role_version` variable when releasing new versions of this role.
+Remember: Make sure to update system_core_barc_role_version variable when a new version is released.
 
 ## [Unreleased][unreleased]
+
+## 0.3.0 - 14/06/2016
+
+### Added
+
+* Improved local fact checking for BARC manifest
+* Added dependency on system-groups role to ensure secondary groups needed by system-users role will exist
+
+### Fixed
+
+* Invalid variable value for BARC manifest role name, `-`'s are not allowed
+* Minor README typos
+* Incorrect variable name in reminder to change the role manifest version variable in the change log
+
+### Changed
+
+* Role refactored to use version 0.3.1 of the Pristine BARC project template
 
 ## 0.2.0 - 05/02/2016
 
